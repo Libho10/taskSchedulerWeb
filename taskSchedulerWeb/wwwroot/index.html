@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task Scheduler</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            max-width: 600px;
+        }
+
+        label, button {
+            font-weight: bold;
+        }
+
+        #taskInput { 
+            width: 70%;
+            padding: 6px;
+            margin-right: 10px;
+        }
+
+        #addBtn, #processBtn {
+            padding: 6px 10px;
+            cursor: pointer;
+        }
+
+        #taskList {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            min-height: 100px;
+            background-color: #f9f9f9;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-style: italic;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Task Scheduler</h1>
+
+    <div>
+        <label for="taskInput">Enter New Task:</label>
+        <input type="text" id="taskInput" placeholder="Task description" />
+        <button id="addBtn">Add</button>
+    </div>
+
+    <div style="margin-top: 15px;">
+        <button id="processBtn">Process Next Task</button>
+    </div>
+
+    <h2>Pending Tasks</h2>
+    <div id="taskList">Loading...</div>
+
+    <div id="message"></div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
